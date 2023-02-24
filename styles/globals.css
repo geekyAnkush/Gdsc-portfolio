@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+  * {
+    @apply cursor-none font-lexend;
+  }
+  body {
+    @apply bg-primary-dark text-secondary-light;
+  }
+}
+
+@layer components {
+  .title-page {
+    @apply fixed left-0 -bottom-32 origin-top-left -rotate-90 text-9xl font-extrabold text-secondary-dark md:bottom-0 md:rotate-0;
+  }
+
+  /* hamburger menu */
+  .hamburger-line {
+    @apply my-[3px] h-1 rounded-md bg-white transition-all duration-300;
+  }
+  .hamburger-active > div:nth-child(1) {
+    @apply w-full origin-top-right -rotate-45;
+  }
+  .hamburger-active > div:nth-child(2) {
+    @apply -mr-10 scale-0;
+  }
+  .hamburger-active > div:nth-child(3) {
+    @apply w-full origin-top-left -rotate-45;
+  }
+
+  /* header and footer */
+  .navbar {
+    @apply flex flex-col justify-evenly rounded-md bg-secondary-dark bg-opacity-75 p-5 font-medium backdrop-blur-md transition-all duration-300 md:mr-0 md:w-full md:flex-row md:rounded-none md:bg-transparent md:p-0 md:backdrop-blur-none;
+  }
+  .nav-items {
+    @apply transition-all duration-500 hover:text-primary-light;
+  }
+  .line-header {
+    @apply rounded-tr-md rounded-br-md bg-primary-light;
+  }
+  .line-footer {
+    @apply rounded-tl-md rounded-bl-md bg-primary-light;
+  }
+
+  /* show/hide navbar */
+  .show > nav {
+    @apply mr-12;
+  }
+  .hide > nav {
+    @apply -mr-96;
+  }
+
+  /* card and icon */
+  .card-home {
+    @apply mt-20 h-64 w-full rounded-xl md:h-72 md:w-64 lg:h-80;
+  }
+  .skills-icon {
+    @apply my-2 ml-4 h-14 w-14 rounded-lg fill-secondary-light transition-all duration-500 hover:bg-secondary-dark hover:fill-primary-light;
+  }
+
+  .contact-form {
+    @apply w-full rounded-md border border-secondary-light bg-primary-dark px-4 py-1 transition duration-500 ease-in-out placeholder:text-secondary-light hover:border-primary-light hover:bg-secondary-dark hover:text-primary-light hover:outline-none focus:border-primary-light focus:bg-secondary-dark focus:text-primary-light focus:outline-none;
+  }
+}
