@@ -1,8 +1,7 @@
 export const Projects = [
   {
     id: 1,
-    name: "Space Game Community ID",
-    slug: "sgcid",
+    name: "Space Game",
     img: "sgcid",
     demo: "https://sgcid.makcnadlkcnalk.ss",
     sourceCode: "https://github.com/gdsc/sgcid",
@@ -12,7 +11,6 @@ export const Projects = [
   {
     id: 2,
     name: "Weather App",
-    slug: "weather-app",
     img: "weather-app",
     demo: "https://weather.jsnjsnd.sss",
     sourceCode: "https://github.com/gdsc/weather-app",
@@ -21,18 +19,16 @@ export const Projects = [
   },
   {
     id: 3,
-    name: "Warung Sunda",
-    slug: "warung-sunda",
-    img: "warung-sunda",
+    name: "Coming Soon Project",
+    img: "coming-soon",
     demo: "https://",
-    sourceCode: "https://github.com/gdsc/warung-sunda",
+    sourceCode: "https://",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla alias accusantium commodi quia rerum reprehenderit similique, ipsa cupiditate vel voluptates sapiente, unde ducimus dignissimos saepe consequuntur possimus maxime voluptatibus laudantium.",
   },
   {
     id: 4,
     name: "Coming Soon Project",
-    slug: "coming-soon-project",
     img: "coming-soon",
     demo: "https://",
     sourceCode: "https://",
@@ -42,7 +38,6 @@ export const Projects = [
   {
     id: 5,
     name: "Coming Soon Project",
-    slug: "coming-soon-project",
     img: "coming-soon",
     demo: "https://",
     sourceCode: "https://",
